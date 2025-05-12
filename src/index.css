@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lato:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bakingo-burgundy: #a55339;
+  --bakingo-gold: #caa24d;
+  --bakingo-dark: #3d322d;
+  --bakingo-light: #faf7f7;
+  --bakingo-pink: #e69292;
+  --bakingo-green: #48b979;
+  --bakingo-gray: #9d9c9e;
+
+  --background: var(--bakingo-light);
+  --foreground: var(--bakingo-dark);
+  --card: #fff;
+  --card-foreground: var(--bakingo-dark);
+  --popover: #fff;
+  --popover-foreground: var(--bakingo-dark);
+  --primary: var(--bakingo-burgundy);
+  --primary-foreground: #fff;
+  --secondary: var(--bakingo-gold);
+  --secondary-foreground: var(--bakingo-dark);
+  --muted: var(--bakingo-gray);
+  --muted-foreground: var(--bakingo-dark);
+  --accent: var(--bakingo-pink);
+  --accent-foreground: var(--bakingo-dark);
+  --destructive: #e53e3e;
+  --destructive-foreground: #fff;
+  --border: var(--bakingo-gray);
+  --input: var(--bakingo-gray);
+  --ring: var(--bakingo-burgundy);
+  --radius: 0.5rem;
+  --chart-1: 12 76% 61%;
+  --chart-2: 173 58% 39%;
+  --chart-3: 197 37% 24%;
+  --chart-4: 43 74% 66%;
+  --chart-5: 27 87% 67%;
+}
+
+.dark {
+  --background: var(--bakingo-dark);
+  --foreground: var(--bakingo-light);
+  --card: var(--bakingo-dark);
+  --card-foreground: var(--bakingo-light);
+  --popover: var(--bakingo-dark);
+  --popover-foreground: var(--bakingo-light);
+  --primary: var(--bakingo-gold);
+  --primary-foreground: var(--bakingo-dark);
+  --secondary: var(--bakingo-burgundy);
+  --secondary-foreground: var(--bakingo-light);
+  --muted: var(--bakingo-gray);
+  --muted-foreground: var(--bakingo-light);
+  --accent: var(--bakingo-pink);
+  --accent-foreground: var(--bakingo-dark);
+  --destructive: #e53e3e;
+  --destructive-foreground: #fff;
+  --border: var(--bakingo-gray);
+  --input: var(--bakingo-gray);
+  --ring: var(--bakingo-gold);
+  --chart-1: 220 70% 50%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
+}
+
+body {
+  font-family: 'Poppins', 'Lato', Arial, sans-serif;
+  background: var(--bakingo-light);
+  color: var(--bakingo-dark);
+}
+
+.bold {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: var(--bakingo-burgundy);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--bakingo-gold);
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+button {
+  font-family: inherit;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
